@@ -1,0 +1,29 @@
+SWASTHYAGRID — FAST GITHUB UPLOAD
+=================================
+
+This ZIP is flat on purpose. Do not create a backend folder. Upload files as they are to the ROOT of a new GitHub repository.
+
+REPOSITORY ROOT FILES:
+  app.py
+  backend_services.py
+  backend_triage.py
+  requirements.txt
+  README.md
+  DEPLOY_NOW.txt
+  .gitignore (optional; not required to run)
+
+STEPS:
+1) Extract the ZIP.
+2) Create a NEW EMPTY GitHub repo, e.g. swasthyagrid-streamlit.
+3) Click Add file > Upload files.
+4) Upload all the files listed above from the extracted folder. For hidden .gitignore, use the file picker or leave it out; it is not needed to run.
+5) Commit to branch main.
+6) Open https://share.streamlit.io/ and click Create app.
+7) Select your repo, branch main, main file path app.py, and Deploy.
+8) Login with demo account admin / Admin@12345 to test. Other accounts are in README.md.
+
+If your previous repository has the old version, use a NEW repository to avoid conflicting old files. Do not upload the ZIP file itself: GitHub will store it as an archive and will not extract app.py automatically.
+
+No Gemini key is needed for launch. You can add GEMINI_API_KEY in Streamlit Settings > Secrets later for optional AI review.
+
+WARNING: Demo credentials are public and SQLite on a cloud host may not persist across restarts. This is for demo/testing only until secure authentication and durable storage are configured.
